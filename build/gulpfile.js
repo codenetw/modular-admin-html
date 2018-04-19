@@ -58,6 +58,10 @@ gulp.task('watch', function() {
 	    gulp.start('app-styles');
 	});
 
+	plugins.watch(paths.app.assets, function() {
+		gulp.start('wssocket');
+	});
+
 	// When theme changes recompile themes
 	plugins.watch(paths.app.themes, function() {
 	    gulp.start('app-themes');

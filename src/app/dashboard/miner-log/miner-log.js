@@ -9,7 +9,7 @@ $(function() {
     function drawLog() {
 		$dashboardLog.empty();
 		socket = wssocket(function( responce ){
-			$dashboardLog.append(responce);
+			$dashboardLog.append(responce+"</br>");
 		},'log');
     }
 

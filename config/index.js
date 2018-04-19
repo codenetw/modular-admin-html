@@ -6,6 +6,7 @@ var destDir = path.resolve("../dist");				// Build destination
 var npmDir =  path.resolve("../node_modules");		// Npm dir
 
 var config = {
+	webSocketAddr:'ws://localhost:2012',
 	rootDir: rootDir,
 	srcDir: srcDir,
 	destDir: destDir,
